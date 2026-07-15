@@ -230,5 +230,20 @@
 
 #20.find the first occurence
 
+# nums=[1,2,3,4,5,3,6,3]
+# target=3
+# found=False
+# for index,num in enumerate(nums):
+#     if num==target:
+#         found=True
+#         break
+# if found:
+#     print(f"Element found at index{index}")
+# else:
+#     print("not found")
 
+
+
+
+#21.
 

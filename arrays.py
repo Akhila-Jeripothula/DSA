@@ -98,3 +98,24 @@
 #     if(num%2!=0):
 #         count+=1
 # print(count)
+
+
+
+
+#10.count positive integers:
+# nums=[1,2,3,4,-2]
+# count=0
+# for num in nums:
+#     if num>0:
+#         count+=1
+# print(count)
+
+
+
+#11.count negative integers
+nums=[1,2,3,4,-2]
+count=0
+for num in nums:
+    if num<0:
+        count+=1
+print(count)

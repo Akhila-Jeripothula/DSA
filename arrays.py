@@ -218,5 +218,17 @@
 
 
 #19. count occurences
+# nums=[1,2,3,4,2,4,2]
+# target=2
+# count=0
+# for num in nums:
+#     if(target==num):
+#         count+=1
+# print(count)
+
+
+
+#20.find the first occurence
+
 
 

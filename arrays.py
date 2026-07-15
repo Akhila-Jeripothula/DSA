@@ -113,9 +113,43 @@
 
 
 #11.count negative integers
-nums=[1,2,3,4,-2]
+# nums=[1,2,3,4,-2]
+# count=0
+# for num in nums:
+#     if num<0:
+#         count+=1
+# print(count)
+
+
+
+#12.count zeroes
+# nums=[1,2,3,4,0,0,0,0,0]
+# count=0
+# for num in nums:
+#     if(num==0):
+#         count+=1
+# print(count)
+
+
+
+
+
+#13.count numbers greater than 10
+# nums=[1,2,5,99]
+# count=0
+# for num in nums:
+#     if(num>10):
+#         count+=1
+# print(count)
+
+
+
+
+
+#14.count numbers divisible by 3
+nums=[1,2,3,4,5,6,9]
 count=0
 for num in nums:
-    if num<0:
+    if num%3==0:
         count+=1
 print(count)

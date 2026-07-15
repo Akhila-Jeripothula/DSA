@@ -147,9 +147,76 @@
 
 
 #14.count numbers divisible by 3
-nums=[1,2,3,4,5,6,9]
-count=0
-for num in nums:
-    if num%3==0:
-        count+=1
-print(count)
+# nums=[1,2,3,4,5,6,9]
+# count=0
+# for num in nums:
+#     if num%3==0:
+#         count+=1
+# print(count)
+
+
+
+
+#LINEAR SEARCH
+
+#15. find the target element
+
+# nums=[1,2,3,4,5,6,34,52,12,11]
+# target=11
+# found=False
+# for num in nums:
+#     if(num==target):
+#         found=True
+#         break
+# if found:
+#     print("FOUND BABY")
+# else:
+#     print("NOT FOUND BABY")
+
+
+
+
+
+#16.
+# nums=[10,20,30,40]
+# for index,num in enumerate(nums):
+#     print(index,num)
+
+
+
+#17. index
+# nums=[10,20,30,40]
+# target=30
+# found=False
+# for index,num in enumerate(nums):
+#     if(num==target):
+#         found=True
+#         break
+# if found:
+#     print(index)
+# else:
+#     print("Element not found")
+
+
+
+
+#18.
+
+# nums = [4,8,15,16,23,42]
+# target = 23
+# found=False
+# for index,num in enumerate(nums):
+#     if target==num:
+#         found=True
+#         break
+# if(found):
+#     print(index)
+# else:
+#     print("element not found")
+
+
+
+
+#19. count occurences
+
+

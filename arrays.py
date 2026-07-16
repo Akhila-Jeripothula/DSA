@@ -245,5 +245,39 @@
 
 
 
-#21.
+#21.find the last occurence
+# nums=[1,2,3,4,3,2,4,3]
+# target=3
+# last_index=-1
+# for index,num in enumerate(nums):
+#     if(target==num):
+#         last_index=index
+# print(last_index)
 
+
+
+
+
+
+#largest
+# nums = [8, 15, 3, 21, 10]
+# largest=nums[0]
+# for num in nums:
+#     if(num>largest):
+#         largest=num
+# print(largest)
+
+
+
+#second largest
+
+nums=[8,15,3,21,10]
+largest=nums[0]
+secondlargest=nums[-1]
+for num in nums:
+    if(num>largest):
+        secondlargest=largest
+        largest=num
+    elif(num>secondlargest and num!=largest):
+        secondlargest=num
+print(secondlargest)

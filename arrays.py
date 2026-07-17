@@ -271,13 +271,47 @@
 
 #second largest
 
-nums=[8,15,3,21,10]
-largest=nums[0]
-secondlargest=nums[-1]
-for num in nums:
-    if(num>largest):
-        secondlargest=largest
-        largest=num
-    elif(num>secondlargest and num!=largest):
-        secondlargest=num
-print(secondlargest)
+# nums=[8,15,3,21,10]
+# largest=float("-inf")
+# secondlargest=nums[-1]
+# for num in nums:
+#     if(num>largest):
+#         secondlargest=largest
+#         largest=num
+#     elif(num>secondlargest and num!=largest):
+#         secondlargest=num
+# print(secondlargest)
+
+
+
+
+#reverse of an array:
+
+
+# nums=[10,20,30,40,50]
+# for i in range(len(nums)-1,-1,-1):
+#     print(nums[i])
+
+
+#method 1:
+# nums=[10,20,30,40,50]
+# rev=[]
+# for i in range(len(nums)-1,-1,-1):
+#     rev.append(nums[i])
+# print(rev)
+    
+
+#method2:(Two pointer approach)    ********************************
+
+nums=[1,2,3,4,5,6]
+left=0
+right=len(nums)-1
+while left<right:
+    temp=nums[left]
+    nums[left]=nums[right]
+    nums[right]=temp
+    left+=1
+    right-=1
+
+print(nums)
+

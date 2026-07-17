@@ -303,15 +303,54 @@
 
 #method2:(Two pointer approach)    ********************************
 
-nums=[1,2,3,4,5,6]
-left=0
-right=len(nums)-1
-while left<right:
-    temp=nums[left]
-    nums[left]=nums[right]
-    nums[right]=temp
-    left+=1
-    right-=1
+# nums=[1,2,3,4,5,6]
+# left=0
+# right=len(nums)-1
+# while left<right:
+#     temp=nums[left]
+#     nums[left]=nums[right]
+#     nums[right]=temp
+#     left+=1
+#     right-=1
 
-print(nums)
+# print(nums)
 
+
+#sorted array
+# nums=[1,3,5,7,2,23,18]
+# sorted_array=True
+# for i in range(len(nums)-1):
+#     if(nums[i]>nums[i+1]):
+#         sorted_array=False
+#         break
+# print(sorted_array)
+
+
+
+
+
+
+# LEETCODE - 1929 ***
+
+# nums=[1,2,1]
+# ans=[]
+# for num in nums:
+#     ans.append(num)
+# for num in nums:
+#     ans.append(num)
+# print(ans)
+
+
+
+
+#move zeroes
+
+nums=[0,5,2,0]
+res=[]
+for num in nums:
+    if(num!=0):
+        res.append(num)
+for i in range(nums.count(0)):
+    res.append(0)
+
+print(res)

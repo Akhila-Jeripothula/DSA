@@ -343,14 +343,60 @@
 
 
 
-#move zeroes
+#move zeroes   ************************
 
-nums=[0,5,2,0]
-res=[]
-for num in nums:
-    if(num!=0):
-        res.append(num)
-for i in range(nums.count(0)):
-    res.append(0)
 
-print(res)
+#method 1- by creating an array
+
+# nums=[0,5,2,0]
+# res=[]
+# for num in nums:
+#     if(num!=0):
+#         res.append(num)
+# for i in range(nums.count(0)):
+#     res.append(0)
+
+# print(res)
+
+
+
+
+#method 2 - two pointer approach
+
+# nums=[1,0,2,3,0,4]
+# left=0
+# for right in range(len(nums)):
+#     if nums[right]!=0:
+#         temp=nums[left]
+#         nums[left]=nums[right]
+#         nums[right]=temp
+#         left+=1
+# print(nums)
+
+
+
+
+#leet code : remove duplicates in a sorted array:
+
+# nums=[1,1,2,2,3,3,4,4]
+# left=0
+# for right in range(1,len(nums)):
+#     if nums[right]!=nums[left]:
+#         left+=1
+#         nums[left]=nums[right]
+
+# print(nums)
+# print(left+1)
+
+
+
+
+
+
+
+# New Topic : Rotate Arrayyyy **
+
+nums=[1,2,3,4,5,6]
+k=2
+nums[:]=nums[-k:]+nums[:-k]
+print(nums)

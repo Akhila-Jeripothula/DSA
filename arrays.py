@@ -405,14 +405,45 @@
 
 #OR
 
-class Solution:
-    def rotate(self,nums,k):
-        k=k%len(nums)
-        def reverse(left,right):
-            while left<right:
-                nums[left],nums[right]=nums[right],nums[left]
-                left+=1
-                right-=1
-            reverse(0,len(nums)-1)
-            reverse(0,k-1)
-            reverse(k,len(nums)-1)
+
+# Leet code 189 solution
+
+# class Solution:
+#     def rotate(self,nums,k):
+#         k=k%len(nums)
+#         def reverse(left,right):
+#             while left<right:
+#                 nums[left],nums[right]=nums[right],nums[left]
+#                 left+=1
+#                 right-=1
+#             reverse(0,len(nums)-1)
+#             reverse(0,k-1)
+#             reverse(k,len(nums)-1)
+
+
+
+
+
+#*****
+# Next topic : Running sum in 1D array ( Prefix sum)
+
+
+
+#method 1: by creating a new array :
+# nums=[1,2,5,7]
+# res=[]
+# total=0
+# for num in nums:
+#     total+=num
+#     res.append(total)
+# print(res)
+
+
+
+#method 2:
+nums = [5, 2, 7, 1]
+
+for i in range(1, len(nums)):
+    nums[i] = nums[i] + nums[i-1]
+
+print(nums)

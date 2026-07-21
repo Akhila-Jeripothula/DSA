@@ -441,9 +441,35 @@
 
 
 #method 2:
-nums = [5, 2, 7, 1]
+# nums = [5, 2, 7, 1]
+# for i in range(1, len(nums)):
+#     nums[i] = nums[i] + nums[i-1]
+# print(nums)
 
-for i in range(1, len(nums)):
-    nums[i] = nums[i] + nums[i-1]
 
-print(nums)
+
+
+
+
+# new concept : Prefix sum with range queries
+
+#prefix sum
+nums=[1,2,3,4,5,6,7,8]
+prefix=[0]*len(nums)
+prefix[0]=nums[0]
+for i in range (1,len(nums)):
+    prefix[i]=prefix[i-1]+nums[i]
+print(prefix)
+
+
+#range queries
+left=2
+right=4
+if(left==0):
+    answer=prefix[right]
+else:
+    answer=prefix[right]-prefix[left-1]
+print(answer)
+
+
+

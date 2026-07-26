@@ -467,13 +467,17 @@ print(prefix)
 
 
 #range queries
-left=2
-right=4
-if(left==0):
-    answer=prefix[right]
-else:
-    answer=prefix[right]-prefix[left-1]
-print(answer)
+# left=2
+# right=4
+# if(left==0):
+#     answer=prefix[right]
+# else:
+#     answer=prefix[right]-prefix[left-1]
+# print(answer)
 
 
+
+
+
+#  PIVOT INDEX:
 

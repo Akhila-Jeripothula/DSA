@@ -458,12 +458,12 @@
 # new concept : Prefix sum with range queries
 
 #prefix sum
-nums=[1,2,3,4,5,6,7,8]
-prefix=[0]*len(nums)
-prefix[0]=nums[0]
-for i in range (1,len(nums)):
-    prefix[i]=prefix[i-1]+nums[i]
-print(prefix)
+# nums=[1,2,3,4,5,6,7,8]
+# prefix=[0]*len(nums)
+# prefix[0]=nums[0]
+# for i in range (1,len(nums)):
+#     prefix[i]=prefix[i-1]+nums[i]
+# print(prefix)
 
 
 #range queries
@@ -480,4 +480,13 @@ print(prefix)
 
 
 #  PIVOT INDEX:
+# nums=[1,7,3,6,5,6]
+# total=sum(nums)
+# left_sum=0
+# for i in range(len(nums)):
+#     right_sum=total-left_sum-nums[i]
+#     if(left_sum==right_sum):
+#         print(i)
+#     left_sum+=nums[i]
+
 

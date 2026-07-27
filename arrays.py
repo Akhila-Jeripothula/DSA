@@ -525,4 +525,22 @@
 #         actual_sum=sum(nums)
 #         missing=expected_sum - actual_sum
 #         return missing
+
+
+
+
+
+
+# NEXT TOPIC : MAJORITY ELEMENT
+
+nums=[2,2,1,1,1,2,2]
+count={}
+for num in nums:
+    if num in count:
+        count[num]+=1
+    else:
+        count[num]=1
+for num in count:
+    if count[num]>len(nums)//2:
+       print(num)
         

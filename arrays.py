@@ -533,14 +533,30 @@
 
 # NEXT TOPIC : MAJORITY ELEMENT
 
-nums=[2,2,1,1,1,2,2]
-count={}
-for num in nums:
-    if num in count:
-        count[num]+=1
-    else:
-        count[num]=1
-for num in count:
-    if count[num]>len(nums)//2:
-       print(num)
+# nums=[2,2,1,1,1,2,2]
+# count={}
+# for num in nums:
+#     if num in count:
+#         count[num]+=1
+#     else:
+#         count[num]=1
+# for num in count:
+#     if count[num]>len(nums)//2:
+#        print(num)
+        
+
+
+# #leetcode: 169
+
+# class Solution:
+#     def majorityElement(self, nums: List[int]) -> int:
+#         count={}
+#         for num in nums:
+#             if num in count:
+#                 count[num]+=1
+#             else:
+#                 count[num]=1
+#         for num in count:
+#             if count[num]>len(nums)//2:
+#                 return num
         

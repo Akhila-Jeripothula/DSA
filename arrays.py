@@ -544,7 +544,18 @@
 #     if count[num]>len(nums)//2:
 #        print(num)
         
-
+#booyer moore method:
+nums=[2,2,1,1,1,2,2]
+candidate=None
+count=0
+for num in nums:
+    if count==0:
+        candidate=num
+    if num==candidate:
+        count+=1
+    else:
+        count-=1
+print(candidate)
 
 # #leetcode: 169
 
@@ -560,3 +571,5 @@
 #             if count[num]>len(nums)//2:
 #                 return num
         
+
+#other method: Booyer Moore method:

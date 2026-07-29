@@ -575,17 +575,36 @@
         
 
 #other method: Booyer Moore method:
-class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
-        candidate=None
-        count=0
-        for num in nums:
-            if count==0:
-                candidate=num
-            if num==candidate:
-                count+=1
-            else:
-                count-=1
-        return candidate
+
+# class Solution:
+#     def majorityElement(self, nums: List[int]) -> int:
+#         candidate=None
+#         count=0
+#         for num in nums:
+#             if count==0:
+#                 candidate=num
+#             if num==candidate:
+#                 count+=1
+#             else:
+#                 count-=1
+#         return candidate
+
+
+
+
+
+
+#Another Topic: Best time to buy and sell stock:
+
+prices=[1,3,5,2,7]
+min_price=prices[0]
+max_profit=0
+for price in prices:
+    if price<min_price:
+        min_price=price
+    profit=price-min_price
+    if profit>max_profit:
+        max_profit=profit
+print(max_profit)
 
         

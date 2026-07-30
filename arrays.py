@@ -596,15 +596,28 @@
 
 #Another Topic: Best time to buy and sell stock:
 
-prices=[1,3,5,2,7]
-min_price=prices[0]
-max_profit=0
-for price in prices:
-    if price<min_price:
-        min_price=price
-    profit=price-min_price
-    if profit>max_profit:
-        max_profit=profit
-print(max_profit)
+# prices=[1,3,5,2,7]
+# min_price=prices[0]
+# max_profit=0
+# for price in prices:
+#     if price<min_price:
+#         min_price=price
+#     profit=price-min_price
+#     if profit>max_profit:
+#         max_profit=profit
+# print(max_profit)
+
+
+
+
+# Another Topic: TWO SUM **********
+
+nums=[1,2,3,6,4]
+target=10
+for i in range(len(nums)):
+    for j in range(i+1,len(nums)):
+        if nums[i]+nums[j]==target:
+            print([i,j])
+
 
         

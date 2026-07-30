@@ -612,6 +612,7 @@
 
 # Another Topic: TWO SUM **********
 
+#BRUTE FORCE APPROACH:
 # nums=[1,2,3,6,4]
 # target=10
 # for i in range(len(nums)):
@@ -621,6 +622,7 @@
 
 
 #leet code 1:
+
 
 
 

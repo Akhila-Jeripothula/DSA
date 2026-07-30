@@ -612,12 +612,16 @@
 
 # Another Topic: TWO SUM **********
 
-nums=[1,2,3,6,4]
-target=10
-for i in range(len(nums)):
-    for j in range(i+1,len(nums)):
-        if nums[i]+nums[j]==target:
-            print([i,j])
+# nums=[1,2,3,6,4]
+# target=10
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if nums[i]+nums[j]==target:
+#             print([i,j])
+
+
+#leet code 1:
+
 
 
         

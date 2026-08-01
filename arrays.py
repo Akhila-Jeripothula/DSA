@@ -680,3 +680,6 @@
 #     res.append(product)
 # print(res)
     
+
+#optimal solution(Using prefix sum):
+

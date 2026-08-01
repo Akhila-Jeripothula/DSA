@@ -699,14 +699,25 @@
 
 
 #first occurence:
-nums=[1,2,3,4,1,2]
-target=2
-found=False
+# nums=[1,2,3,4,1,2]
+# target=2
+# found=False
+# for index,num in enumerate(nums):
+#     if num==target:
+#         found=True
+#         break
+# if found:
+#     print(f"Element found at index {index}")
+# else:
+#     print("Element not found")
+
+
+
+#last occurences:
+nums=[1,2,3,4,1]
+target=1
+last_index=-1
 for index,num in enumerate(nums):
     if num==target:
-        found=True
-        break
-if found:
-    print(f"Element found at index {index}")
-else:
-    print("Element not found")
+        last_index=index
+print(last_index)

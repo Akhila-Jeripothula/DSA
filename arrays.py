@@ -696,3 +696,17 @@
 #     answer[i]=prefix[i]*suffix[i]
 # print(answer)
 
+
+
+#first occurence:
+nums=[1,2,3,4,1,2]
+target=2
+found=False
+for index,num in enumerate(nums):
+    if num==target:
+        found=True
+        break
+if found:
+    print(f"Element found at index {index}")
+else:
+    print("Element not found")

@@ -713,6 +713,9 @@
 
 
 
+
+# BASIC REVISION:
+
 #last occurences:
 # nums=[1,2,3,4,1]
 # target=1
@@ -723,13 +726,16 @@
 # print(last_index)
 
 #second largest:
-nums=[1,2,3,4,5,6,7]
-largest=nums[0]
-secondlargest=float("-inf")
-for num in nums:
-    if(num>largest):
-        secondlargest=largest
-        largest=num
-    elif(num>secondlargest and num!=largest):
-        secondlargest=num
-print(secondlargest)
+# nums=[1,2,3,4,5,6,7]
+# largest=nums[0]
+# secondlargest=float("-inf")
+# for num in nums:
+#     if(num>largest):
+#         secondlargest=largest
+#         largest=num
+#     elif(num>secondlargest and num!=largest):
+#         secondlargest=num
+# print(secondlargest)
+
+
+#maxsubarray(kadanae algorithm):

@@ -754,10 +754,24 @@
 # Arrays Continuation:
 # KADANE'S ALGORITHM(MAXIMUM SUB ARRAY):
 
-nums=[-2,1,-3,4,-1,2,1,-5,4]
-current_sum=nums[0]
-max_sum=nums[0]
-for i in range(1,len(nums)):
-    current_sum=max(nums[i],nums[i]+current_sum)
-    max_sum=max(current_sum,max_sum)
-print(max_sum)
+# nums=[-2,1,-3,4,-1,2,1,-5,4]
+# current_sum=nums[0]
+# max_sum=nums[0]
+# for i in range(1,len(nums)):
+#     current_sum=max(nums[i],nums[i]+current_sum)
+#     max_sum=max(current_sum,max_sum)
+# print(max_sum)
+
+
+
+
+# Merged Sorted Arrays:
+
+nums1=[1,2,3,0,0,0]
+nums2=[2,4,5]
+m=3
+n=3
+for i in range(n):
+    nums1[m+i]=nums2[i]
+nums1.sort()
+print(nums1)

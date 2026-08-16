@@ -768,12 +768,36 @@
 
 
 # Merged Sorted Arrays:
+# nums1=[1,2,3,0,0,0]
+# nums2=[2,4,5]
+# m=3
+# n=3
+# for i in range(n):
+#     nums1[m+i]=nums2[i]
+# nums1.sort()
+# print(nums1)
 
-nums1=[1,2,3,0,0,0]
-nums2=[2,4,5]
-m=3
-n=3
-for i in range(n):
-    nums1[m+i]=nums2[i]
-nums1.sort()
-print(nums1)
+# nums1=[1,2,3,0,0,0]
+# nums2=[2,4,5]
+# m=3
+# n=3
+# for i in range(n):
+#     nums1[m+i]=nums2[i]
+# nums1.sort()
+# print(nums1)
+
+
+
+
+
+# Next Topic: Intersection of arrays(Leetcode:349)
+nums1=[1,2,2,1]
+nums2=[2,2]
+answer=[]
+seen=set()
+for num in nums1:
+    if num in nums2 and num not in seen:
+        answer.append(num)
+        seen.add(num)
+
+print(answer)

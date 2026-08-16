@@ -791,8 +791,9 @@
 
 
 # Next Topic: Intersection of arrays(Leetcode:349)
-nums1=[1,2,2,1]
-nums2=[2,2]
+
+nums1=[1,2,3,4,5]
+nums2=[2,2,3,4]
 answer=[]
 seen=set()
 for num in nums1:

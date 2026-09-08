@@ -794,13 +794,33 @@
 
 # Next Topic: Intersection of arrays(Leetcode:349)
 
-nums1=[1,2,3,4,5]
-nums2=[2,2,3,4]
-answer=[]
-seen=set()
-for num in nums1:
-    if num in nums2 and num not in seen:
-        answer.append(num)
-        seen.add(num)
+# nums1=[1,2,3,4,5]
+# nums2=[2,2,3,4]
+# answer=[]
+# seen=set()
+# for num in nums1:
+#     if num in nums2 and num not in seen:
+#         answer.append(num)
+#         seen.add(num)
 
-print(answer)
+# print(answer)
+
+
+#Next topic : sort colors:
+
+nums=[2,1,2,1,0,0]
+low=0
+mid=0
+high=len(nums)-1
+while mid<=high:
+    if nums[mid]==0:
+        nums[low],nums[mid]=nums[mid],nums[low]
+        low+=1
+        mid+=1
+    elif nums[mid]==1:
+        mid+=1
+    else:
+        nums[mid],nums[high]=nums[high],nums[mid]
+        high-=1
+print(nums)
+

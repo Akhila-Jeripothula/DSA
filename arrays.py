@@ -808,19 +808,41 @@
 
 #Next topic : sort colors:
 
-nums=[2,1,2,1,0,0]
-low=0
-mid=0
-high=len(nums)-1
-while mid<=high:
-    if nums[mid]==0:
-        nums[low],nums[mid]=nums[mid],nums[low]
-        low+=1
-        mid+=1
-    elif nums[mid]==1:
-        mid+=1
-    else:
-        nums[mid],nums[high]=nums[high],nums[mid]
-        high-=1
-print(nums)
+# nums=[2,1,2,1,0,0]
+# low=0
+# mid=0
+# high=len(nums)-1
+# while mid<=high:
+#     if nums[mid]==0:
+#         nums[low],nums[mid]=nums[mid],nums[low]
+#         low+=1
+#         mid+=1
+#     elif nums[mid]==1:
+#         mid+=1
+#     else:
+#         nums[mid],nums[high]=nums[high],nums[mid]
+#         high-=1
+# print(nums)
+
+
+
+
+#new topic : container wiith most water
+
+# class Solution:
+#     def maxArea(self, height: List[int]) -> int:
+#         left=0
+#         right=len(height)-1
+#         max_area=0
+#         while left<right:
+#             h=min(height[left],height[right])
+#             w=right-left
+#             area=h*w
+#             max_area=max(max_area,area)
+#             if height[left]<height[right]:
+#                 left+=1
+#             else:
+#                 right-=1
+#         return max_area
+        
 

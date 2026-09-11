@@ -848,22 +848,19 @@
 #         return max_area
 
 
+        
 
 
 
+#New topic:
+#Numbers Disappeared in an Array:
 
-
-
-# New Topic : Maximum consecutive Ones:(leetcode)
-
-# nums=[1,0,1,1,1]
-# count=0
-# max_count=0
-# for num in nums:
-#     if num==1:
-#         count+=1
-#         max_count=max(count,max_count)
-#     else:
-#         count=0
-# print(max_count)        
+#1. Brute Force:
+nums=[1,3,4,7,6,1]
+n=len(nums)
+answer=[]
+for num in range(1,n+1):
+    if num not in nums:
+        answer.append(num)
+print(answer)
 

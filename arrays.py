@@ -856,11 +856,21 @@
 #Numbers Disappeared in an Array:
 
 #1. Brute Force:
-nums=[1,3,4,7,6,1]
-n=len(nums)
-answer=[]
-for num in range(1,n+1):
-    if num not in nums:
-        answer.append(num)
-print(answer)
+# nums=[1,3,4,7,6,1]
+# n=len(nums)
+# answer=[]
+# for num in range(1,n+1):
+#     if num not in nums:
+#         answer.append(num)
+# print(answer)
 
+
+#new topic:
+#find duplicates
+
+#brute force:
+nums=[1,2,3,1]
+for i in range(len(nums)):
+    for j in range(i+1,len(nums)):
+        if(nums[i]==nums[j]):
+            print(nums[i])

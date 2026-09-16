@@ -1,6 +1,6 @@
 #Arrays:(1st part)
 
-#Basics of DSA
+#Basics of Data structures and algorithms
 
 
 

@@ -1,4 +1,4 @@
-Arrays part 2
+# Arrays part 2
 #3 sum:
 # class Solution:
 #     def threeSum(self, nums):
@@ -57,3 +57,25 @@ Arrays part 2
 #                 if total==k:
 #                     count+=1
 #         return count        
+
+
+
+
+
+
+#LEETCODE 128 - Longest consequtive sequence:
+
+nums=[100,67,11,4,12,13]
+longest = 0
+
+for num in nums:
+    current = num
+    count = 1
+
+    while current + 1 in nums:
+        current += 1
+        count += 1
+
+        longest = max(longest, count)
+
+print(longest)

@@ -65,17 +65,37 @@
 
 #LEETCODE 128 - Longest consequtive sequence:
 
-nums=[100,67,11,4,12,13]
-longest = 0
+# nums=[100,67,11,4,12,13]
+# longest = 0
 
-for num in nums:
-    current = num
-    count = 1
+# for num in nums:
+#     current = num
+#     count = 1
 
-    while current + 1 in nums:
-        current += 1
-        count += 1
+#     while current + 1 in nums:
+#         current += 1
+#         count += 1
 
-        longest = max(longest, count)
+#         longest = max(longest, count)
 
-print(longest)
+# print(longest)
+
+
+#optimal:
+class Solution:
+    def longestConsecutive(self, nums):
+        num_set = set(nums)
+        longest = 0
+
+        for num in num_set:
+            if num - 1 not in num_set:
+                current = num
+                count = 1
+
+                while current + 1 in num_set:
+                    current += 1
+                    count += 1
+
+                longest = max(longest, count)
+
+        return longest
